@@ -194,6 +194,54 @@ nav{
     display: none;
 }
 
+/* ABOUT SECTION */
+
+.about{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-text{
+    color: white;
+    background: var(--background-color);
+    flex: 2 1 40rem;
+    justify-content: space-around;
+}
+
+.about-text div{
+    padding: 3rem 8rem;
+}
+
+.about-text h2{
+    font-family: "Vibes";
+    padding: 4rem;
+}
+
+.about-text h3{
+    padding: 2rem 0rem;
+    font-family: "Ruhl Medium", sans-serif;
+}
+
+.about-image{
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.about-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-image h2{
+    position: absolute;
+    letter-spacing: 2rem;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+}
+
 /* Media Query */
 @media screen and (max-width: 842px){
     .hero{
@@ -249,5 +297,10 @@ nav{
     }
     .menu-check:checked ~ .burger-menu span{
         background: white;
+    }
+
+    /* ABOUT SECTION */
+    .about-text div{
+        padding: 3rem 3rem;
     }
 }
